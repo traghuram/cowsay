@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "example",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash cow.sh > test.txt && cowsay moo > test2.txt && diff test.txt test2.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 0
+    },
+    {
+      "name": "Check task 1",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_1.sh > test.txt && cowsay \"1) Individuals and interactions over processes and tools 2) Working software over comprehensive documentation 3) Customer collaboration over contract negotiation 4) Responding to change over following a plan\" > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Check task 2",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_2.sh > test.txt && cowsay -d \"1) Individuals and interactions over processes and tools 2) Working software over comprehensive documentation 3) Customer collaboration over contract negotiation 4) Responding to change over following a plan\" > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Check task 3",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_3.sh > test.txt && cowsay -e zz moo > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Check task 4",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_4.sh > test.txt && cowsay -e \"\\$\\$\" moo > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Check task 5",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_5.sh > test.txt && cowsay -e \"zz\" -T \"\\$\\$\" moo > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Check task 6",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_6.sh > test.txt && cowthink -W 4 \"ask what you can do!\" > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Check task 7",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_7.sh > test.txt && cowsay -f moose \"Hello, world!\" > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Check task 8",
+      "setup": "sudo apt-get install cowsay",
+      "run": "/bin/bash task_8.sh > test.txt && cowsay -f ./fox \"Hello, world!\" > test_check.txt && diff test.txt test_check.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
